@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <script src="jquery.js" type="text/javascript"></script>
+  <script src="SaveLoadDelete.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="index.css" title="PrisonBreak">
+  <meta charset="utf-8">
+  <title></title>
+
+  <body>
+    <h1>PRISON BREAK</h1>
+
+    <div class="tab">
+      <button class="tablinks" id=home>Home</button>
+      <button class="tablinks" id=settings>Settings</button>
+      <button class="tablinks" id=contact>Contact Us</button>
+    </div>
+  </head>
+
+<!-- Main div, all prompts appear within this -->
+    <div class="main" id="main">
+      <h3>1940 <br>Russian Gulag Prison Camp</h3> <br>
+      <p>You awaken in a cold room on a cold metallic bed</p> <br>
+      <p>You look to your left and see a <b>man</b> staring at you.</p><br>
+      <p><i>Type 'help' for help</i></p>
+
+<!-- HELP -->
+      <p id="help" style="display:none">Help: <br>
+      <b> All commands are case sensitive!</b> <br>
+      take [item] <br>
+      use [item] <br>
+      hint about [item] <br>
+      go to [area]<br>
+      inspect [area]<br>
+      talk to [person]<br>
+      Things in <b>bold</b> are things you can interact with.<br>
+      <i>Italics</i> indicate choices. <br>
+      </p>
+
+      <!-- Placeholder div, all prompts are set to appear before this -->
+      <div id="placeholder"></div>
+    </div>
+
+<!-- Action Bar for entering commands -->
+  <form onsubmit="return false;">
+    <input type="text" name="actionbar" id="actionbar" class="actionbar" autocomplete="off" onblur="this.focus()" autofocus placeholder="Enter commands here..."/>
+  </form>
+    <script type="text/javascript" src="game.js"> </script>
+
+
+
+
+
+<!-- tabs -->
+</div id="main" class="tabcontent">
+<div>
+  <div id="Settings" class="tabcontent">
+    <div>
+      <h3>Settings</h3>
+      <button type="button" id="save"> Save </button>
+      <button type="button" id="load"> Load </button>
+      <button type="button" id="delete"> Delete Cookies (This will erase all data!) </button>
+    </div>
+  </div id="Settings" class="tabcontent">
+</div>
+<div>
+  <div id="Contact Us" class="tabcontent">
+    <div>
+      <h3>PACS Inc.</h3>
+      <p>If you have any problems feel free to contact us. <br>
+        Email: <a>PACSINC@gmail.com</a><br>
+        Phone Number: <a>770-867-5309</a><br>
+        <a href="https://youtu.be/YQad6_rRxKM">About this project</a>
+      </p>
+    </div>
+  </div id="Contact Us" class="tabcontent">
+</div>
+
+</body>
+</html>
